@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms Builder</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <nav class="uk-navbar-container uk-padding uk-padding-remove-top uk-padding-remove-bottom" uk-navbar>
+            <div class="uk-navbar-left">
+
+                <a class="uk-navbar-item uk-logo" href="index.html">Forms Builder</a>
+
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="index.html">Forms</a></li>
+                    <li><a href="creat_new_form.html">+ Create New Form</a></li>
+                </ul>
+
+            </div>
+
+            <div class="uk-navbar-right">
+
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#">Username</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="responses.html">My responses</a></li>
+                                <li><a href="logout.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <div class="uk-section uk-section-muted">
+
+        <div class="uk-container uk-container-small">
+
+            <div class="uk-clearfix">
+                <div class="uk-float-right">
+                    <a class="uk-link-text" href="#modal-container3" uk-toggle>+ Response to this form</a>
+                </div>
+                <div class="uk-float-left">
+                    <h2 class="uk-margin-remove">Form 1</h2>
+                </div>
+            </div>
+
+            <div class="uk-margin-medium-top">
+                <ul class="uk-flex-center" uk-tab>
+                    <li><a href="#">Responses</a></li>
+                    <li><a href="#">Quastions</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+
+                <ul class="uk-switcher uk-margin">
+                    <li>
+                        <form>
+                            <table class="uk-table uk-table-hover uk-table-divider uk-table-striped uk-table-small">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Date</th>
+                                        <th>
+                                            <div class="uk-clearfix">
+                                                <div class="uk-float-right">
+
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Bader Abdullah</td>
+                                        <td>10/09/2022</td>
+                                        <td>
+                                            <div class="uk-clearfix">
+                                                <div class="uk-float-right">
+                                                    <a class="uk-button uk-button-default uk-button-small" href="#modal-container1"
+                                                        uk-toggle>Details</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Khalid Mohammad</td>
+                                        <td>25/08/2022</td>
+                                        <td>
+                                            <div class="uk-clearfix">
+                                                <div class="uk-float-right">
+                                                    <a class="uk-button uk-button-default uk-button-small" href="#modal-container2"
+                                                        uk-toggle>Details</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </form>
+
+                        <div id="modal-container1" class="uk-modal-container" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Form 1</h2> <span>Date of response 10/09/2022</span>
+                                <form class="uk-form-horizontal uk-margin">
+
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-text">Name</label>
+                                        <div class="uk-form-controls">
+                                            <label class="uk-form-label" for="form-horizontal-text">Bader
+                                                Abdullah</label>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-select">Department</label>
+                                        <div class="uk-form-controls">
+                                            <label class="uk-form-label" for="form-horizontal-text">IT</label>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="uk-margin">
+                                        <div class="uk-form-label">Gender</div>
+                                        <div class="uk-form-controls uk-form-controls-text">
+                                            <label class="uk-form-label" for="form-horizontal-text">Male</label>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div id="modal-container2" class="uk-modal-container" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                <h2 class="uk-modal-title">Form 1</h2> <span>Date of response 25/08/2022</span>
+                                <form class="uk-form-horizontal uk-margin">
+
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-text">Name</label>
+                                        <div class="uk-form-controls">
+                                            <label class="uk-form-label" for="form-horizontal-text">Khalid
+                                                Mohammad</label>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-select">Department</label>
+                                        <div class="uk-form-controls">
+                                            <label class="uk-form-label" for="form-horizontal-text">HR</label>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="uk-margin">
+                                        <div class="uk-form-label">Gender</div>
+                                        <div class="uk-form-controls uk-form-controls-text">
+                                            <label class="uk-form-label" for="form-horizontal-text">Male</label>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div id="modal-container3" class="uk-modal-container" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+
+                                <h2 class="uk-modal-title">Form 1</h2>
+
+                                <form class="uk-form-horizontal uk-margin-large">
+
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-text">Name</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" id="form-horizontal-text" type="text"
+                                                placeholder="Full name">
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-select">Department</label>
+                                        <div class="uk-form-controls">
+                                            <select class="uk-select" id="form-horizontal-select">
+                                                <option>IT</option>
+                                                <option>HR</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <div class="uk-form-label">Gender</div>
+                                        <div class="uk-form-controls uk-form-controls-text">
+                                            <label><input class="uk-radio" type="radio" name="radio1"> Male</label><br>
+                                            <label><input class="uk-radio" type="radio" name="radio1"> Female</label>
+                                        </div>
+                                    </div>
+
+                                    <p uk-margin>
+                                        <button class="uk-button uk-button-primary">Send</button>
+                                    </p>
+
+                                </form>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <form>
+                            <table class="uk-table uk-table-hover uk-table-divider uk-table-striped uk-table-small">
+                                <thead>
+                                    <tr>
+                                        <th>Title</th>
+                                        <th>Control</th>
+                                        <th>
+                                            <div class="uk-clearfix">
+                                                <div class="uk-float-right">
+
+                                                </div>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td>Text</td>
+                                        <td>
+                                            <div class="uk-clearfix">
+                                                <div class="uk-float-right">
+                                                    <a class="uk-button uk-button-default uk-button-small" href="#modal-container4"
+                                                        uk-toggle>Edit</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Department</td>
+                                        <td>Select</td>
+                                        <td>
+                                            <div class="uk-clearfix">
+                                                <div class="uk-float-right">
+                                                    <a class="uk-button uk-button-default uk-button-small" href="#modal-container5"
+                                                        uk-toggle>Edit</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gender</td>
+                                        <td>Radio</td>
+                                        <td>
+                                            <div class="uk-clearfix">
+                                                <div class="uk-float-right">
+                                                    <a class="uk-button uk-button-default uk-button-small" href="#modal-container6"
+                                                        uk-toggle>Edit</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+
+                        <div id="modal-container4" class="uk-modal-container" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                
+                                <h2 class="uk-modal-title">Field 1</h2>
+                    
+                                <form class="uk-form-horizontal uk-margin-large">
+                    
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-text">Title</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Name">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-select">Control</label>
+                                        <div class="uk-form-controls">
+                                            <select class="uk-select" id="form-horizontal-select">
+                                                <option>Text</option>
+                                                <option>Select</option>
+                                                <option>Radio</option>
+                                                <option>Check</option>
+                                                <option>Date</option>
+                                                <option>Textarea</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-text">Options</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-margin">
+                                                <textarea class="uk-textarea" rows="5" placeholder="Add options..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <div class="uk-form-label">Required</div>
+                                        <div class="uk-form-controls uk-form-controls-text">
+                                            <label><input class="uk-radio" type="radio" name="radio1"> Yes</label><br>
+                                            <label><input class="uk-radio" type="radio" name="radio1"> No</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <p uk-margin>
+                                        <button class="uk-button uk-button-primary">Update</button>
+                                    </p>
+                    
+                                </form>
+    
+                            </div>
+                        </div>
+                        
+                        <div id="modal-container5" class="uk-modal-container" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                
+                                <h2 class="uk-modal-title">Field 2</h2>
+                    
+                                <form class="uk-form-horizontal uk-margin-large">
+                    
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-text">Title</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Name">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-select">Control</label>
+                                        <div class="uk-form-controls">
+                                            <select class="uk-select" id="form-horizontal-select">
+                                                <option>Text</option>
+                                                <option>Select</option>
+                                                <option>Radio</option>
+                                                <option>Check</option>
+                                                <option>Date</option>
+                                                <option>Textarea</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-text">Options</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-margin">
+                                                <textarea class="uk-textarea" rows="5" placeholder="Add options..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <div class="uk-form-label">Required</div>
+                                        <div class="uk-form-controls uk-form-controls-text">
+                                            <label><input class="uk-radio" type="radio" name="radio1"> Yes</label><br>
+                                            <label><input class="uk-radio" type="radio" name="radio1"> No</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <p uk-margin>
+                                        <button class="uk-button uk-button-primary">Update</button>
+                                    </p>
+                    
+                                </form>
+    
+                            </div>
+                        </div>
+
+                        <div id="modal-container6" class="uk-modal-container" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                
+                                <h2 class="uk-modal-title">Field 3</h2>
+                    
+                                <form class="uk-form-horizontal uk-margin-large">
+                    
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-text">Title</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Name">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-select">Control</label>
+                                        <div class="uk-form-controls">
+                                            <select class="uk-select" id="form-horizontal-select">
+                                                <option>Text</option>
+                                                <option>Select</option>
+                                                <option>Radio</option>
+                                                <option>Check</option>
+                                                <option>Date</option>
+                                                <option>Textarea</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-text">Options</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-margin">
+                                                <textarea class="uk-textarea" rows="5" placeholder="Add options..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <div class="uk-form-label">Required</div>
+                                        <div class="uk-form-controls uk-form-controls-text">
+                                            <label><input class="uk-radio" type="radio" name="radio1"> Yes</label><br>
+                                            <label><input class="uk-radio" type="radio" name="radio1"> No</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <p uk-margin>
+                                        <button class="uk-button uk-button-primary">Update</button>
+                                    </p>
+                    
+                                </form>
+    
+                            </div>
+                        </div>
+
+                        <div id="modal-container7" class="uk-modal-container" uk-modal>
+                            <div class="uk-modal-dialog uk-modal-body">
+                                <button class="uk-modal-close-default" type="button" uk-close></button>
+                                
+                                <h2 class="uk-modal-title">New field</h2>
+                    
+                                <form class="uk-form-horizontal uk-margin-large">
+                    
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-text">Title</label>
+                                        <div class="uk-form-controls">
+                                            <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Name">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-select">Control</label>
+                                        <div class="uk-form-controls">
+                                            <select class="uk-select" id="form-horizontal-select">
+                                                <option>Text</option>
+                                                <option>Select</option>
+                                                <option>Radio</option>
+                                                <option>Check</option>
+                                                <option>Date</option>
+                                                <option>Textarea</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="form-horizontal-text">Options</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-margin">
+                                                <textarea class="uk-textarea" rows="5" placeholder="Add options..."></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="uk-margin">
+                                        <div class="uk-form-label">Required</div>
+                                        <div class="uk-form-controls uk-form-controls-text">
+                                            <label><input class="uk-radio" type="radio" name="radio1"> Yes</label><br>
+                                            <label><input class="uk-radio" type="radio" name="radio1"> No</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <p uk-margin>
+                                        <button class="uk-button uk-button-primary">Add</button>
+                                    </p>
+                    
+                                </form>
+    
+                            </div>
+                        </div>
+
+                        <p uk-margin>
+                            <a class="uk-button uk-button-default" href="#modal-container7" uk-toggle>Add new field</a>
+                        </p>
+
+                    </li>
+                    <li>
+                        <form class="uk-form-horizontal uk-margin-large">
+                    
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-horizontal-text">Form name</label>
+                                <div class="uk-form-controls">
+                                    <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Name">
+                                </div>
+                            </div>
+                        
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-horizontal-text">Form description</label>
+                                <div class="uk-form-controls">
+                                    <div class="uk-margin">
+                                        <textarea class="uk-textarea" rows="5" placeholder="Form description..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="uk-margin">
+                                <label class="uk-form-label" for="form-horizontal-select">Form group</label>
+                                <div class="uk-form-controls">
+                                    <select class="uk-select" id="form-horizontal-select">
+                                        <option>All groups</option>
+                                        <option>IT</option>
+                                        <option>HR</option>
+                                        <option>Education</option>
+                                        <option>Quality</option>
+                                        <option>Public Relation</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="uk-margin">
+                                <div class="uk-form-label">Allow multi response</div>
+                                <div class="uk-form-controls uk-form-controls-text">
+                                    <label><input class="uk-checkbox" type="checkbox"> Yes</label>
+                                </div>
+                            </div>
+            
+                            <div class="uk-margin">
+                                <div class="uk-form-label">Closed</div>
+                                <div class="uk-form-controls uk-form-controls-text">
+                                    <label><input class="uk-checkbox" type="checkbox" checked> Yes</label>
+                                </div>
+                            </div>
+            
+                            <br>
+                            
+                            <p uk-margin>
+                                <button class="uk-button uk-button-primary">Update</button>
+                            </p>
+            
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="uk-background-muted uk-height-large">
+        <div class="uk-card uk-text-center uk-position-z-index uk-padding"
+            uk-sticky="position: bottom; end: !.uk-height-large">SFHD ⓒ Forms Builder 2022</div>
+    </div>
+
+</body>
+
+</html>

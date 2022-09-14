@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms Builder</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+
+    <div >
+        <nav class="uk-navbar-container uk-padding uk-padding-remove-top uk-padding-remove-bottom" uk-navbar>
+            <div class="uk-navbar-left">
+                
+                <a class="uk-navbar-item uk-logo" href="index.html">Forms Builder</a>
+
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="index.html">Forms</a></li>
+                    <li><a href="creat_new_form.html">+ Create New Form</a></li>
+                </ul>
+        
+            </div>
+
+            <div class="uk-navbar-right">
+        
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="#">Username</a>
+                        <div class="uk-navbar-dropdown">
+                            <ul class="uk-nav uk-navbar-dropdown-nav">
+                                <li><a href="responses.html">My responses</a></li>
+                                <li><a href="logout.html">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <div class="uk-section uk-section-muted">
+
+        <div class="uk-container uk-container-small">
+
+            <h2>Create new form</h2>
+            
+            <!-- <div class="uk-alert-success" uk-alert>
+                <a class="uk-alert-close" uk-close></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            </div> -->
+
+            <form class="uk-form-horizontal uk-margin-large">
+                    
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-horizontal-text">Form name</label>
+                    <div class="uk-form-controls">
+                        <input class="uk-input" id="form-horizontal-text" type="text" placeholder="Name">
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-horizontal-text">Form description</label>
+                    <div class="uk-form-controls">
+                        <div class="uk-margin">
+                            <textarea class="uk-textarea" rows="5" placeholder="Form description..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="uk-margin">
+                    <label class="uk-form-label" for="form-horizontal-select">Form group</label>
+                    <div class="uk-form-controls">
+                        <select class="uk-select" id="form-horizontal-select">
+                            <option>All groups</option>
+                            <option>IT</option>
+                            <option>HR</option>
+                            <option>Education</option>
+                            <option>Quality</option>
+                            <option>Public Relation</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="uk-margin">
+                    <div class="uk-form-label">Allow multi response</div>
+                    <div class="uk-form-controls uk-form-controls-text">
+                        <label><input class="uk-checkbox" type="checkbox"> Yes</label>
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <div class="uk-form-label">Closed <br> (You can change this later)</div>
+                    <div class="uk-form-controls uk-form-controls-text">
+                        <label><input class="uk-checkbox" type="checkbox" checked disabled> Yes</label>
+                    </div>
+                </div>
+
+                <br>
+                
+                <p uk-margin>
+                    <button class="uk-button uk-button-primary">Create form</button>
+                </p>
+
+            </form>
+
+        </div>
+        
+    </div>
+
+    <div class="uk-background-muted uk-height-large">
+        <div class="uk-card uk-text-center uk-position-z-index uk-padding" uk-sticky="position: bottom; end: !.uk-height-large">SFHD ⓒ Forms Builder 2022</div>
+    </div>
+
+</body>
+
+</html>
